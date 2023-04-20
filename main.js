@@ -26,8 +26,7 @@ function toggleMenu() {
 }
 
 function closeMenu() {
-    let menu = document.querySelector(".main-nav");
-    menu.classList.remove("open");
+    mainNav.classList.remove("open");
 }
 
 const homeLink = document.getElementById("home-link");
