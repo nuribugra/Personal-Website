@@ -62,6 +62,8 @@ contactLink.addEventListener("click", function () {
 const toggle = document.getElementById('toggleMode');
 const body = document.querySelector('body');
 const contactTitle = document.getElementById('contactTitle');
+const header = document.querySelector('header');
+const footer = document.querySelector('footer');
 
 toggle.addEventListener('click', function() {
    this.classList.toggle('bi-moon');
@@ -70,10 +72,18 @@ toggle.addEventListener('click', function() {
       body.style.color = '#454545';
       body.style.transition = '2s';
       contactTitle.style.color = '#3C486B';
+      header.style.background =  '#3C79F5';
+      footer.style.background =  '#3C79F5';
+      header.style.transition = '2s';
+      footer.style.transition = '2s';
    }else {
       body.style.background =  '#454545';
       body.style.color = '#F0F0F0';
       body.style.transition = '2s';
-      contactTitle.style.color = '#FBC252';
+      contactTitle.style.color = '#F0F0F0';
+      header.style.background =  '#3C486B';
+      footer.style.background =  '#3C486B';
+      header.style.transition = '2s';
+      footer.style.transition = '2s';
    }
 });
