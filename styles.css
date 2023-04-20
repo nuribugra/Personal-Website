@@ -448,6 +448,9 @@ header {
         flex-direction: column;
         gap: 1.5rem;
     }
+    .social-box a:hover {
+        transform: scale(110%);
+    }
 }
 
 /* Footer */
