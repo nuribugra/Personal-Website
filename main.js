@@ -1,3 +1,4 @@
+// Navbar
 const navBtn = document.querySelector(".nav-btn");
 const nav = document.querySelector("#nav");
 const mainNav = document.querySelector(".main-nav");
@@ -55,4 +56,24 @@ portfolioLink.addEventListener("click", function () {
 contactLink.addEventListener("click", function () {
    document.getElementById("contact").scrollIntoView();
    closeMenu();
+});
+
+// Toggle Dark/Light Mode
+const toggle = document.getElementById('toggleMode');
+const body = document.querySelector('body');
+const contactTitle = document.getElementById('contactTitle');
+
+toggle.addEventListener('click', function() {
+   this.classList.toggle('bi-moon');
+   if (this.classList.toggle('bi-brightness-high-fill')) {
+      body.style.background =  '#F0F0F0';
+      body.style.color = '#454545';
+      body.style.transition = '2s';
+      contactTitle.style.color = '#3C486B';
+   }else {
+      body.style.background =  '#454545';
+      body.style.color = '#F0F0F0';
+      body.style.transition = '2s';
+      contactTitle.style.color = '#FBC252';
+   }
 });

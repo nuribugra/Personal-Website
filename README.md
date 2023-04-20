@@ -18,3 +18,4 @@ Project Details:
 - https://getbootstrap.com/docs/5.0/layout/breakpoints/
 - https://fonts.google.com/
 - https://fontawesome.com/
+- https://icons.getbootstrap.com/
