@@ -258,6 +258,9 @@ header {
 
 /* About Responsive */
 @media (max-width: 768px) {
+    .about {
+        margin-top: 4rem;
+    }
     .card {
         flex-direction: column;
         width: 100%;
