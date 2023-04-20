@@ -184,9 +184,13 @@ header {
     font-size: 2rem;
     color: var(--pinkred);
     font-weight: bold;
+    text-align: center;
 }
 /* Home Responsive */
 @media (max-width: 576px) {
+    .home {
+        padding: 1rem;
+    }
     .greeting-title {
         font-size: 3.5rem;
     }
