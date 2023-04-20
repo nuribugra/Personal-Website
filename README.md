@@ -11,7 +11,7 @@ Project Details:
 
 ### PS: I prefer minimalism in everything. That's why I designed this website from a minimalist perspective. In my opinion, the website is in perfect condition in terms of accessibility and aesthetics.
 
-### Website link: 
+### Website link: https://nuribugra.github.io/
 
 ## Useful Resources That I Used This Project:
 - https://colorhunt.co/
