@@ -102,7 +102,7 @@ header {
     transition: .3s;
 }
 .toggle-mode:hover {
-    color: var(--darkgray);
+    color: #272727; 
 }
 
 /* Navbar Responsive */
@@ -122,7 +122,7 @@ header {
         top: 0;
         left: 0;
         width: 100vw;
-        opacity: 0.98; 
+        opacity: 0.85; 
     }   
     nav.open {
         visibility: visible;
@@ -136,7 +136,7 @@ header {
         gap: 5rem;
         height: 100vh;
         overflow: hidden;
-        background: var(--pinkred);
+        background: var(--darkblue);
         transform: translateY(-100%);
         transition: .5s ease-in-out;
     }
@@ -156,12 +156,18 @@ header {
         text-transform: uppercase;
         font-size: 2.5rem;
     }
+    .nav-link:hover {
+        color: var(--blue);
+    }
 
     .toggle-mode {
         position: relative;
         top: 0;
         right: 0;
         font-size: 4rem;
+    }
+    .toggle-mode:hover {
+        color: var(--blue);
     }
 }
 
