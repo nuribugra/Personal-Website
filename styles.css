@@ -95,7 +95,7 @@ header {
 .toggle-mode {
     color: var(--white);
     position: absolute;
-    top: 2rem;
+    top: 2.3rem;
     right: 4rem;
     font-size: 2.2rem;
     cursor: pointer;
@@ -191,7 +191,7 @@ header {
 }
 .fname {
     font-size: 6rem;
-    color: var(--yellow);
+    /* color: var(--yellow); */
     font-weight: 700;
 }
 
@@ -244,7 +244,7 @@ header {
     margin-top: 10rem;
     width: 100%;
     min-height: 100vh;
-    padding-top: 20rem;
+    padding-top: 17rem;
 }
 
 .card {
@@ -343,7 +343,7 @@ header {
     width: 100%;
     min-height: 100vh;
     text-align: center;
-    padding-top: 10rem;
+    padding-top: 14rem;
 }
 
 .main-title {
@@ -366,30 +366,31 @@ header {
 }
 
 .project {
-    border: 2px solid var(--darkblue);
-    background-color: var(--darkblue);
-    border-radius: 8px;
-    padding: 1rem;
-    height: 50vh;
+    /* border: 2px solid var(--darkblue); */
+    background-color: var(--darkgray);
+    border-radius: 10px;
+    /* width: 30%; */
+    aspect-ratio: 2/1;
 }
 .project img {
     width: 100%;
-    height: 70%;
     object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .project-details {
-    padding: 2rem;
+    padding: 1rem;
 }
 .project-details h3{
     color: var(--white);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 .btns {
-    margin-top: 3rem;
+    margin-top: 1.7rem;
     display: flex;
     justify-content: center;
-    gap: 4rem;
+    gap: 3rem;
 }
 .btns a {
     color: var(--white);
@@ -418,6 +419,13 @@ header {
     .projects {
         flex-direction: column;
     }
+    .project {
+        width: 100%;
+        aspect-ratio: 2/1;
+    }
+    .button {
+        font-size: 1.5rem;
+    }
 }
 
 /* Contact Section */
@@ -425,7 +433,8 @@ header {
     width: 100%;
     min-height: 65vh;
     text-align: center;
-    padding: 3rem;
+    padding: 5rem;
+    margin: 4rem auto;
 }
 
 .contact h1 {
