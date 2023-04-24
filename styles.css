@@ -357,6 +357,11 @@ header {
     margin: 1.5rem auto 1rem auto;
 }
 
+.loading {
+    margin: 5rem auto;
+    font-size: 4rem;
+}
+
 .projects {
     width: 90%;
     margin: 5rem auto;
