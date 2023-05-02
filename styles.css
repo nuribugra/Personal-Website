@@ -88,7 +88,7 @@ header {
     transition: .3s;
 }
 .nav-link:hover {
-    color: var(--darkblue);
+    color: #272727;
 }
 
 /* Toggle Dark/Light Mode */
