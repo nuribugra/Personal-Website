@@ -64,6 +64,7 @@ const body = document.querySelector('body');
 const contactTitle = document.getElementById('contactTitle');
 const header = document.querySelector('header');
 const footer = document.querySelector('footer');
+const brandBorder = document.querySelectorAll('.brand-logo');
 
 toggle.addEventListener('click', function() {
    this.classList.toggle('bi-moon');
@@ -76,6 +77,7 @@ toggle.addEventListener('click', function() {
       footer.style.background =  '#3C79F5';
       header.style.transition = '2s';
       footer.style.transition = '2s';
+      brandBorder.forEach((item) => item.style.backgroundColor = '#F0F0F0');
    }else {
       body.style.background =  '#454545';
       body.style.color = '#F0F0F0';
@@ -85,5 +87,6 @@ toggle.addEventListener('click', function() {
       footer.style.background =  '#3C486B';
       header.style.transition = '2s';
       footer.style.transition = '2s';
+      brandBorder.forEach((item) => item.style.backgroundColor = '#F0F0F0');
    }
 });
