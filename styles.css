@@ -459,6 +459,10 @@ header {
     .button {
         font-size: 1.5rem;
     }
+    
+    .brand-logo {
+        width: 33rem;
+    }
 }
 
 /* Contact Section */
