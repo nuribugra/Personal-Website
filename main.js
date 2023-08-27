@@ -59,7 +59,7 @@ contactLink.addEventListener("click", function () {
 });
 
 // Toggle Dark/Light Mode
-const toggle = document.getElementById('toggleMode');
+/*const toggle = document.getElementById('toggleMode');
 const body = document.querySelector('body');
 const contactTitle = document.getElementById('contactTitle');
 const header = document.querySelector('header');
@@ -89,4 +89,4 @@ toggle.addEventListener('click', function() {
       footer.style.transition = '2s';
       brandBorder.forEach((item) => item.style.backgroundColor = '#F0F0F0');
    }
-});
+});*/
