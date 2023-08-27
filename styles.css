@@ -140,7 +140,7 @@ header {
         gap: 5rem;
         height: 100vh;
         overflow: hidden;
-        background: var(--darkblue);
+        background: var(--darkpurple);
         transform: translateY(-100%);
         transition: .5s ease-in-out;
     }
