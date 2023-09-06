@@ -5,8 +5,8 @@ Before the intermediate Javascript lessons, I want to create a personal website 
 Project Details:
 - CSS Flexbox
 - CSS Variables
-- Basic Javascript
-- Rem Units
+- Basic JavaScript Features
+- Rem Unit
 - Responsive Design
 
 ### PS: I prefer minimalism in everything. That's why I designed this website from a minimalist perspective. In my opinion, the website is in perfect condition in terms of accessibility and aesthetics.
