@@ -13,7 +13,7 @@ Project Details:
 
 ### Website link: https://nuribugra.github.io/
 
-## Useful Resources That I Used This Project:
+## Useful Resources That I Utilized In This Project:
 - https://colorhunt.co/
 - https://getbootstrap.com/docs/5.0/layout/breakpoints/
 - https://fonts.google.com/
