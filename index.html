@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
@@ -38,7 +38,7 @@
                         <a href="#portfolio" id="portfolio-link"  class="nav-link">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="https://medium.com/@nuribugra" id="articles-link"  class="nav-link">Articles</a>
+                        <a href="#articles" id="articles-link" class="nav-link">Articles</a>
                     </li>
                     <li class="nav-item">
                         <a href="#contact" id="contact-link"  class="nav-link">Contact</a>
@@ -62,14 +62,14 @@
                 <p class="description">Web Development, Algorithm Design & Programming</p>
             </div>
             <div class="main-img">
-                <img src="img/main-img.png" alt="a programmer is sitting on a floor">
+                <img src="assets/img/main-img.png" alt="a programmer is sitting on a floor">
             </div>
         </section>  
 
         <section class="about" id="about">
             <div class="card">
                 <div class="card-img">
-                    <img src="img/profile-picture.png" alt="Profile Picture">
+                    <img src="assets/img/profile-picture.png" alt="Profile Picture">
                 </div>
                 <div class="card-body">
                     <div class="box box-1">
@@ -96,6 +96,40 @@
             <a href="https://github.com/nuribugra" target="_blank" class="button">Click to see my other projects</a>
         </section>
 
+        <section class="articles" id="articles">
+            <h1 class="main-title">My Articles</h1>
+            <hr class="divider general-divider">
+            <div id="articles-container">
+                <!-- Articles will be dynamically added here -->
+                <!-- <div class="article-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Article 1" class="article-image">
+                    <div class="article-details">
+                        <h2 class="article-title">Sample Article 1</h2>
+                        <p class="article-excerpt">This is a brief excerpt of the first sample article...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Article 2" class="article-image">
+                    <div class="article-details">
+                        <h2 class="article-title">Sample Article 2</h2>
+                        <p class="article-excerpt">Here's a short excerpt from the second sample article...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Article 3" class="article-image">
+                    <div class="article-details">
+                        <h2 class="article-title">Sample Article 3</h2>
+                        <p class="article-excerpt">And this is an excerpt from the third sample article...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div> -->
+            </div>
+            <div id="pagination"></div>
+            <div id="article-details" style="display: none;"></div>
+        </section>
+
         <section class="contact" id="contact">
             <h1 id="contactTitle">Let's work together...</h1>
             <div class="social-box">
@@ -114,7 +148,7 @@
         <p><i class="fa-regular fa-copyright"></i> Copyright 2023, Nuri Buğra Demir</p>
     </footer>
     
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/1e35e0cc2e.js" crossorigin="anonymous"></script>
 </body>
 </html>

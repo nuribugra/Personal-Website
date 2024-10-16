@@ -58,6 +58,111 @@ contactLink.addEventListener("click", function () {
    closeMenu();
 });
 
+// Articles Functionality
+let currentPage = 1;
+const articlesPerPage = 3;
+
+async function fetchArticles(page = 1) {
+   try {
+      const response = await fetch(`http://localhost:5000/articles?page=${page}&per_page=6`);
+      if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return await response.json();
+  } catch (error) {
+      console.error("Could not fetch articles:", error);
+  }
+}
+
+function displayArticles(articles) {
+   const container = document.getElementById('articles-container');
+   container.innerHTML = '';
+   articles.forEach(article => {
+       const articleElement = document.createElement('div');
+       articleElement.className = 'article-card';
+       articleElement.innerHTML = `
+            <h2 class="article-title">${article.title}</h2>
+            <p class="article-excerpt">${article.content.substring(0, 100)}...</p>
+            <button class="read-more" onclick="showArticleDetails(${article.id})">Read More</button>
+       `;
+       container.appendChild(articleElement);
+   });
+}
+
+function displayPagination(currentPage, totalPages) {
+   const paginationContainer = document.getElementById('pagination');
+   paginationContainer.innerHTML = '';
+
+   for (let i = 1; i <= totalPages; i++) {
+      const pageButton = document.createElement('button');
+      pageButton.innerText = i;
+      pageButton.className = i === currentPage ? 'active' : '';
+      pageButton.addEventListener('click', () => loadArticles(i));
+      paginationContainer.appendChild(pageButton);
+   }
+}
+
+async function fetchArticleDetails(articleId) {
+   try {
+       const response = await fetch(`http://localhost:5000/article/${articleId}`);
+       if (!response.ok) {
+           throw new Error(`HTTP error! status: ${response.status}`);
+       }
+       return await response.json();
+   } catch (error) {
+       console.error("Could not fetch article details:", error);
+   }
+}
+
+async function showArticleDetails(articleId) {
+   const article = await fetchArticleDetails(articleId);
+   if (article) {
+       const detailsContainer = document.getElementById('article-details');
+       detailsContainer.innerHTML = `
+           <h2>${article.title}</h2>
+           <p>${article.content}</p>
+           <button onclick="hideArticleDetails()">Back to List</button>
+       `;
+       detailsContainer.style.display = 'block';
+       document.getElementById('articles-container').style.display = 'none';
+       document.getElementById('pagination').style.display = 'none';
+   }
+}
+
+function hideArticleDetails() {
+   document.getElementById('article-details').style.display = 'none';
+   document.getElementById('articles-container').style.display = 'block';
+   document.getElementById('pagination').style.display = 'flex';
+}
+
+async function loadArticles(page = 1) {
+   const data = await fetchArticles(page);
+    if (data && data.articles.length > 0) {
+        displayArticles(data.articles);
+        displayPagination(data.current_page, data.total_pages);
+    } else {
+        console.log("No articles found or error occurred");
+    }
+}
+
+// Load initial articles
+document.addEventListener('DOMContentLoaded', () => loadArticles(1));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Toggle Dark/Light Mode
 /*const toggle = document.getElementById('toggleMode');
 const body = document.querySelector('body');
